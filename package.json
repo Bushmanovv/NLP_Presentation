@@ -1,0 +1,17 @@
+{
+  "name": "nlp-presentation-deepseek-r1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NLP course presentation on DeepSeek-R1 (arXiv:2501.12948), built with Marp.",
+  "scripts": {
+    "serve": "marp slides/ --server --html --allow-local-files --theme-set slides/themes/",
+    "preview": "marp slides/deck.md --preview --html --allow-local-files --theme-set slides/themes/",
+    "watch": "marp slides/deck.md --watch --html --allow-local-files --theme-set slides/themes/ -o dist/deck.html",
+    "build": "marp slides/deck.md --pdf --allow-local-files --theme-set slides/themes/ -o dist/deck.pdf",
+    "build:html": "marp slides/deck.md --html --allow-local-files --theme-set slides/themes/ -o dist/deck.html",
+    "build:pptx": "marp slides/deck.md --pptx --allow-local-files --theme-set slides/themes/ -o dist/deck.pptx"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.1.2"
+  }
+}
